@@ -1,7 +1,7 @@
 const Typed = require("typed.js");
 
 const typed = new Typed("#textWelcome", {
-  strings: ["My Creative Space. 👋"],
+  strings: ["Welcome to", "My Creative Space. 👋"],
   typeSpeed: 50,
   loop: true,
   backDelay: 1000,
