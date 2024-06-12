@@ -1,0 +1,23 @@
+{
+  "name": "personalweb",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "wp:run": "npx webpack ./src/main.js --watch",
+    "wp:build": "npx webpack ./src/main.js",
+    "tw:run": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "tw:build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4",
+    "webpack": "^5.92.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "typed.js": "^2.1.0"
+  }
+}

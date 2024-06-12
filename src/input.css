@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
+
+@layer components {
+  .project-card {
+    @apply w-full max-w-[300px] flex flex-col items-center;
+  }
+
+  .project-card img {
+    @apply w-full rounded-lg;
+  }
+}
