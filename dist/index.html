@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website - Adelia Tiara</title>
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="bg-black-800 text-white m-0">
+    <!-- Navbar -->
+    <header
+      class="bg-black-800 text-white flex justify-between items-center p-8"
+    >
+      <p class="text-lg font-bold">Myusea</p>
+      <p id="datetime"></p>
+      <script>
+        // Get current date and time
+        var now = new Date();
+        var datetime = now.toLocaleDateString();
+        // Insert date and time into HTML
+        document.getElementById("datetime").innerHTML = datetime;
+      </script>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="bg-black-800 text-black-100">
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex justify-between items-center">
+          <div>
+            <h1 class="text-4xl font-bold">
+              Welcome to <span class="italic" id="textWelcome"></span>
+            </h1>
+            <p class="text-2xl italic mt-2 font-semibold">
+              <span id="textLearning"></span>
+              <!-- A learning <span class="text-pink-500 font-bold">artist</span> and
+              <span class="text-pink-500 font-bold">college student.</span> -->
+            </p>
+            <p class="mt-2">
+              Let's explore the magic of
+              <span class="underline italic">creativity</span> together.
+            </p>
+          </div>
+          <div>
+            <p
+              class="mt-2 font-bold bg-pink-700 inline-block py-1 px-3 rounded-full"
+            >
+              Discover My World
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Me Section -->
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col items-center">
+          <p
+            class="bg-black-100 container mx-auto px-4 py-8 rounded-md text-black-800 text-l font-semibold content-fit"
+          >
+            Hello! I'm Adelia Tiara, a creative soul with a passion for
+            <span class="text-pink-500">illustration</span> and
+            <span class="text-pink-500">graphic design</span>. Recently, I've
+            become deeply interested in
+            <span class="text-pink-500">product management</span> and
+            <span class="text-pink-500">web developer</span>. I draw inspiration
+            from everything around me, transforming ideas into digital art and
+            functional websites. Join me on a journey to make the web a more
+            <span class="text-pink-500">beautiful</span> and
+            <span class="text-pink-500">functional</span> place.
+          </p>
+        </div>
+      </div>
+
+      <!-- Portfolio Section -->
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col items-center">
+          <h2 class="text-3xl font-bold">My Projects</h2>
+          <p class="mt-2">Check out some of my recent works.</p>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4"
+          >
+            <div class="bg-black-700 p-4 rounded-md project-card">
+              <img src="./assets/project-1.png" alt="Project 1" class="mb-4" />
+              <p class="font-bold">Project One</p>
+              <p class="text-sm">A beautiful website for a local business.</p>
+            </div>
+            <div class="bg-black-700 p-4 rounded-md project-card">
+              <img src="./assets/project-2.png" alt="Project 2" class="mb-4" />
+              <p class="font-bold">Project Two</p>
+              <p class="text-sm">An innovative web app to manage tasks.</p>
+            </div>
+            <div class="bg-black-700 p-4 rounded-md project-card">
+              <img src="./assets/project-3.png" alt="Project 3" class="mb-4" />
+              <p class="font-bold">Project Three</p>
+              <p class="text-sm">A modern portfolio for an artist.</p>
+            </div>
+          </div>
+          <button class="mt-4 bg-pink-600 text-white py-2 px-4 rounded-full">
+            View More
+          </button>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col items-center">
+          <h2 class="text-3xl font-bold">Get in Touch</h2>
+          <p class="mt-2">I'd love to hear from you! Feel free to reach out.</p>
+          <form class="bg-black-500 p-8 rounded-md mt-4 w-full max-w-lg">
+            <div class="mb-4">
+              <label for="name" class="block text-white">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="w-full p-2 rounded-md bg-black-700 border border-black-600 text-white"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="email" class="block text-white">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="w-full p-2 rounded-md bg-black-700 border border-black-600 text-white"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="block text-white">Message</label>
+              <textarea
+                id="message"
+                class="w-full p-2 rounded-md bg-black-700 border border-black-600 text-white"
+                rows="4"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-pink-600 text-white py-2 px-4 rounded-full"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <footer class="bg-black-800 text-white py-4">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center">
+            <p class="text-sm">© Adelia Tiara 2024. All Rights Reserved.</p>
+            <div class="flex space-x-4">
+              <a href="#" class="text-white">Twitter</a>
+              <a href="#" class="text-white">LinkedIn</a>
+              <a href="#" class="text-white">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
